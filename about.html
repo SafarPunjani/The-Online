@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>About Us | The Online - Digital Agency in Jamnagar, Gujarat</title>
+    <meta name="description" content="Learn about The Online, a trusted digital agency in Jamnagar helping local businesses with website development, digital marketing, and branding solutions.">
+    <meta name="keywords" content="about The Online, digital agency Jamnagar, web development company Gujarat, business branding, social media agency India">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style>
+        /* ========================================
+           CUSTOM STYLES FOR THE ONLINE WEBSITE
+        ======================================== */
+        
+        :root {
+            --primary-orange: #f97316;
+            --primary-orange-hover: #ea580c;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-orange);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-orange-hover);
+            transform: translateY(-2px);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-orange);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            display: none;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    
+    <!-- ========================================
+         NAVIGATION BAR
+    ======================================== -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-gray-900">
+                        The <span class="text-orange-500">Online</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-orange-500 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-orange-500 font-medium">About</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-orange-500 font-medium">Services</a>
+                    <a href="our-works.html" class="nav-link text-gray-700 hover:text-orange-500 font-medium">Our Works</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-orange-500 font-medium">Contact</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-orange-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="mobile-menu" class="mobile-menu md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-orange-500 font-medium">About</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Services</a>
+                <a href="our-works.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Our Works</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-orange-500 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ========================================
+         PAGE HEADER
+    ======================================== -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About <span class="text-orange-500">Us</span></h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Learn more about The Online and our mission to help local businesses succeed in the digital world.
+            </p>
+        </div>
+    </section>
+    
+    <!-- ========================================
+         ABOUT CONTENT SECTION
+    ======================================== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Helping Your Business <span class="text-orange-500">Go Online</span>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At <strong>The Online</strong>, we understand the challenges local businesses face when trying to establish 
+                        their digital presence. That's why we offer comprehensive solutions that are affordable, professional, 
+                        and tailored to your specific needs.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Whether you need a professional website, digital marketing strategies, social media management, 
+                        or offline branding materials like visiting cards and logos - we've got you covered.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Based in <strong>Jamnagar, Gujarat</strong>, we work closely with our clients to deliver results 
+                        that help them grow their business and reach more customers.
+                    </p>
+                    
+                    <a href="https://wa.me/917575839147" target="_blank" 
+                       class="btn-primary inline-flex items-center px-8 py-4 text-white font-semibold rounded-full shadow-lg">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Let's Connect
+                    </a>
+                </div>
+                
+                <!-- Image -->
+                <div class="bg-gray-50 rounded-3xl p-8 text-center">
+                    <!-- 
+                        TO CHANGE THIS IMAGE:
+                        Replace the src URL with your own image
+                        Recommended size: 600x400 pixels
+                    -->
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" 
+                         alt="Team collaboration" 
+                         class="rounded-2xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========================================
+         OUR VISION SECTION
+    ======================================== -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Vision</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We believe every local business deserves a strong digital presence.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Vision 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Professional Websites</h3>
+                    <p class="text-gray-600 text-sm">Creating websites that represent your business professionally online.</p>
+                </div>
+                
+                <!-- Vision 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Digital Marketing</h3>
+                    <p class="text-gray-600 text-sm">Strategies that bring real customers to your business.</p>
+                </div>
+                
+                <!-- Vision 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Social Media</h3>
+                    <p class="text-gray-600 text-sm">Building your brand presence across social platforms.</p>
+                </div>
+                
+                <!-- Vision 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Offline Branding</h3>
+                    <p class="text-gray-600 text-sm">Supporting your business with quality printed materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========================================
+         OUR VALUES SECTION
+    ======================================== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="text-center p-8 border border-gray-100 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl mb-4">🤝</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Trust & Transparency</h3>
+                    <p class="text-gray-600">We believe in honest communication and building long-term relationships with our clients.</p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="text-center p-8 border border-gray-100 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Innovation</h3>
+                    <p class="text-gray-600">We stay updated with the latest trends to provide modern solutions for your business.</p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="text-center p-8 border border-gray-100 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl mb-4">⭐</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Quality</h3>
+                    <p class="text-gray-600">We never compromise on quality, delivering professional work every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========================================
+         CTA SECTION
+    ======================================== -->
+    <section class="py-20 bg-orange-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Work Together?</h2>
+            <p class="text-orange-100 text-lg mb-8">
+                Contact us today and let's discuss how we can help your business grow.
+            </p>
+            <a href="https://wa.me/917575839147" target="_blank" 
+               class="inline-flex items-center px-8 py-4 bg-white text-orange-500 font-semibold rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+    
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">The <span class="text-orange-500">Online</span></h3>
+                    <p class="text-gray-400">Helping Your Business Go Online</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-orange-500">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-orange-500">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-orange-500">Services</a></li>
+                        <li><a href="our-works.html" class="text-gray-400 hover:text-orange-500">Our Works</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-orange-500">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Gujarat, Jamnagar - 361006</li>
+                        <li>+91 7575839147</li>
+                        <li>
+                            <a href="https://www.instagram.com/the_online_officials" target="_blank" class="hover:text-orange-500">
+                                @the_online_officials
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© The Online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917575839147" target="_blank" 
+       class="whatsapp-float bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
